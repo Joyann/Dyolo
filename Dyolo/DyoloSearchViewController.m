@@ -7,6 +7,7 @@
 //
 
 #import "DyoloSearchViewController.h"
+#import "Movie.h"
 #import <AFNetworking/AFHTTPRequestOperation.h>
 
 static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
@@ -17,6 +18,7 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
+@property (strong, nonatomic) NSMutableArray *movies;
 
 @end
 
@@ -101,15 +103,18 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
     [self.searchBar resignFirstResponder];
     
     [self.operationQueue cancelAllOperations];
+    
+    self.movies = [[NSMutableArray alloc] init];
 
     NSURL *url = [self URLFromSearchText];
     
     NSURLRequest *URLRequest = [[NSURLRequest alloc] initWithURL:url];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:URLRequest];
+    operation.responseSerializer = [AFJSONResponseSerializer serializer];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-
+        [self parseDictionary:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
     }];
@@ -124,6 +129,20 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
     NSString *text = [self.searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@tag=%@", DouBanSearchURLString, text]];
     return url;
+}
+
+#pragma mark - ParseDictionaryToDataModel(Movie)
+
+- (void)parseDictionary:(id)responseObject
+{
+    NSDictionary *dic = (NSDictionary *)responseObject;
+    NSArray *results = dic[@"subjects"];
+    for (NSDictionary *movieDic in results) {
+        Movie *movie = [Movie MovieWithMovieDic:movieDic];
+        if (movie != nil) {
+            [self.movies addObject:movie];
+        }
+    }
 }
 
 @end

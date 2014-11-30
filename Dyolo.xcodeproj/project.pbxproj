@@ -1,907 +1,473 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>25FAC95B5099CFF34ED010D0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Dyolo.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C72D1A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C7381A2AF94000C8EDB5</string>
-				<string>6225C7521A2AF94000C8EDB5</string>
-				<string>6225C7371A2AF94000C8EDB5</string>
-				<string>CF9EE6BBD3207B915DC28463</string>
-				<string>F2ED6774FACE09FCCC9C3E12</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C72E1A2AF94000C8EDB5</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Joyann</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>6225C7351A2AF94000C8EDB5</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1</string>
-					</dict>
-					<key>6225C74E1A2AF94000C8EDB5</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1</string>
-						<key>TestTargetID</key>
-						<string>6225C7351A2AF94000C8EDB5</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>6225C7311A2AF94000C8EDB5</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>6225C72D1A2AF94000C8EDB5</string>
-			<key>productRefGroup</key>
-			<string>6225C7371A2AF94000C8EDB5</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>6225C7351A2AF94000C8EDB5</string>
-				<string>6225C74E1A2AF94000C8EDB5</string>
-			</array>
-		</dict>
-		<key>6225C7311A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6225C7571A2AF94000C8EDB5</string>
-				<string>6225C7581A2AF94000C8EDB5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6225C7321A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6225C73F1A2AF94000C8EDB5</string>
-				<string>6225C73C1A2AF94000C8EDB5</string>
-				<string>6225C7621A2AF96100C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C7331A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C1B671EF1E6E0A3108D5C8BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C7341A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6225C7471A2AF94000C8EDB5</string>
-				<string>6225C7631A2AF96100C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C7351A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6225C7591A2AF94000C8EDB5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FF699DFAAA7A099796B8315B</string>
-				<string>6225C7321A2AF94000C8EDB5</string>
-				<string>6225C7331A2AF94000C8EDB5</string>
-				<string>6225C7341A2AF94000C8EDB5</string>
-				<string>6D4F112677CCC9019F125775</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Dyolo</string>
-			<key>productName</key>
-			<string>Dyolo</string>
-			<key>productReference</key>
-			<string>6225C7361A2AF94000C8EDB5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6225C7361A2AF94000C8EDB5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Dyolo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6225C7371A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C7361A2AF94000C8EDB5</string>
-				<string>6225C74F1A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7381A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C73D1A2AF94000C8EDB5</string>
-				<string>6225C73E1A2AF94000C8EDB5</string>
-				<string>6225C7461A2AF94000C8EDB5</string>
-				<string>6225C7391A2AF94000C8EDB5</string>
-				<string>6225C75F1A2AF96100C8EDB5</string>
-				<string>6225C7601A2AF96100C8EDB5</string>
-				<string>6225C7611A2AF96100C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Dyolo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7391A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C73A1A2AF94000C8EDB5</string>
-				<string>6225C73B1A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C73A1A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C73B1A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C73C1A2AF94000C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C73B1A2AF94000C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6225C73D1A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C73E1A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C73F1A2AF94000C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C73E1A2AF94000C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6225C7461A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7471A2AF94000C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C7461A2AF94000C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6225C74B1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6225C7561A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C74C1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C74D1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6225C74E1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6225C75C1A2AF94000C8EDB5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6225C74B1A2AF94000C8EDB5</string>
-				<string>6225C74C1A2AF94000C8EDB5</string>
-				<string>6225C74D1A2AF94000C8EDB5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6225C7511A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DyoloTests</string>
-			<key>productName</key>
-			<string>DyoloTests</string>
-			<key>productReference</key>
-			<string>6225C74F1A2AF94000C8EDB5</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>6225C74F1A2AF94000C8EDB5</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DyoloTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6225C7501A2AF94000C8EDB5</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6225C72E1A2AF94000C8EDB5</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6225C7351A2AF94000C8EDB5</string>
-			<key>remoteInfo</key>
-			<string>Dyolo</string>
-		</dict>
-		<key>6225C7511A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6225C7351A2AF94000C8EDB5</string>
-			<key>targetProxy</key>
-			<string>6225C7501A2AF94000C8EDB5</string>
-		</dict>
-		<key>6225C7521A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C7551A2AF94000C8EDB5</string>
-				<string>6225C7531A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DyoloTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7531A2AF94000C8EDB5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6225C7541A2AF94000C8EDB5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7541A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7551A2AF94000C8EDB5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DyoloTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7561A2AF94000C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C7551A2AF94000C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6225C7571A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6225C7581A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6225C7591A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6225C75A1A2AF94000C8EDB5</string>
-				<string>6225C75B1A2AF94000C8EDB5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6225C75A1A2AF94000C8EDB5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FA289B1B932237D3869804FF</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Dyolo/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6225C75B1A2AF94000C8EDB5</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>25FAC95B5099CFF34ED010D0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Dyolo/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6225C75C1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6225C75D1A2AF94000C8EDB5</string>
-				<string>6225C75E1A2AF94000C8EDB5</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6225C75D1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>DyoloTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6225C75E1A2AF94000C8EDB5</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>DyoloTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6225C75F1A2AF96100C8EDB5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>DyoloSearchViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7601A2AF96100C8EDB5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>DyoloSearchViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7611A2AF96100C8EDB5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>DyoloSearchViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6225C7621A2AF96100C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C7601A2AF96100C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6225C7631A2AF96100C8EDB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6225C7611A2AF96100C8EDB5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6D4F112677CCC9019F125775</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6EA5FF19AF4A38927BDB84F0</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-Dyolo.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C1B671EF1E6E0A3108D5C8BF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EA5FF19AF4A38927BDB84F0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CF9EE6BBD3207B915DC28463</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FA289B1B932237D3869804FF</string>
-				<string>25FAC95B5099CFF34ED010D0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F2ED6774FACE09FCCC9C3E12</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6EA5FF19AF4A38927BDB84F0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FA289B1B932237D3869804FF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Dyolo.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF699DFAAA7A099796B8315B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>6225C72E1A2AF94000C8EDB5</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6225C73C1A2AF94000C8EDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73B1A2AF94000C8EDB5 /* main.m */; };
+		6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */; };
+		6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7461A2AF94000C8EDB5 /* Images.xcassets */; };
+		6225C7561A2AF94000C8EDB5 /* DyoloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7551A2AF94000C8EDB5 /* DyoloTests.m */; };
+		6225C7621A2AF96100C8EDB5 /* DyoloSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */; };
+		6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */; };
+		626C3B7D1A2B436C00D1229D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 626C3B7C1A2B436C00D1229D /* Movie.m */; };
+		C1B671EF1E6E0A3108D5C8BF /* libPods-Dyolo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6225C7501A2AF94000C8EDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6225C72E1A2AF94000C8EDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6225C7351A2AF94000C8EDB5;
+			remoteInfo = Dyolo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25FAC95B5099CFF34ED010D0 /* Pods-Dyolo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyolo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo.release.xcconfig"; sourceTree = "<group>"; };
+		6225C7361A2AF94000C8EDB5 /* Dyolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dyolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6225C73A1A2AF94000C8EDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6225C73B1A2AF94000C8EDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6225C7461A2AF94000C8EDB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyoloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6225C7541A2AF94000C8EDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6225C7551A2AF94000C8EDB5 /* DyoloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyoloTests.m; sourceTree = "<group>"; };
+		6225C75F1A2AF96100C8EDB5 /* DyoloSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyoloSearchViewController.h; sourceTree = "<group>"; };
+		6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyoloSearchViewController.m; sourceTree = "<group>"; };
+		6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DyoloSearchViewController.xib; sourceTree = "<group>"; };
+		626C3B7B1A2B436C00D1229D /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		626C3B7C1A2B436C00D1229D /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dyolo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA289B1B932237D3869804FF /* Pods-Dyolo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyolo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6225C7331A2AF94000C8EDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B671EF1E6E0A3108D5C8BF /* libPods-Dyolo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74C1A2AF94000C8EDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6225C72D1A2AF94000C8EDB5 = {
+			isa = PBXGroup;
+			children = (
+				6225C7381A2AF94000C8EDB5 /* Dyolo */,
+				6225C7521A2AF94000C8EDB5 /* DyoloTests */,
+				6225C7371A2AF94000C8EDB5 /* Products */,
+				CF9EE6BBD3207B915DC28463 /* Pods */,
+				F2ED6774FACE09FCCC9C3E12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6225C7371A2AF94000C8EDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7361A2AF94000C8EDB5 /* Dyolo.app */,
+				6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6225C7381A2AF94000C8EDB5 /* Dyolo */ = {
+			isa = PBXGroup;
+			children = (
+				6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */,
+				6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */,
+				6225C7461A2AF94000C8EDB5 /* Images.xcassets */,
+				6225C7391A2AF94000C8EDB5 /* Supporting Files */,
+				6225C75F1A2AF96100C8EDB5 /* DyoloSearchViewController.h */,
+				6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */,
+				6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */,
+				626C3B7B1A2B436C00D1229D /* Movie.h */,
+				626C3B7C1A2B436C00D1229D /* Movie.m */,
+			);
+			path = Dyolo;
+			sourceTree = "<group>";
+		};
+		6225C7391A2AF94000C8EDB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6225C73A1A2AF94000C8EDB5 /* Info.plist */,
+				6225C73B1A2AF94000C8EDB5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6225C7521A2AF94000C8EDB5 /* DyoloTests */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7551A2AF94000C8EDB5 /* DyoloTests.m */,
+				6225C7531A2AF94000C8EDB5 /* Supporting Files */,
+			);
+			path = DyoloTests;
+			sourceTree = "<group>";
+		};
+		6225C7531A2AF94000C8EDB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7541A2AF94000C8EDB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF9EE6BBD3207B915DC28463 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA289B1B932237D3869804FF /* Pods-Dyolo.debug.xcconfig */,
+				25FAC95B5099CFF34ED010D0 /* Pods-Dyolo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2ED6774FACE09FCCC9C3E12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6225C7351A2AF94000C8EDB5 /* Dyolo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6225C7591A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "Dyolo" */;
+			buildPhases = (
+				FF699DFAAA7A099796B8315B /* Check Pods Manifest.lock */,
+				6225C7321A2AF94000C8EDB5 /* Sources */,
+				6225C7331A2AF94000C8EDB5 /* Frameworks */,
+				6225C7341A2AF94000C8EDB5 /* Resources */,
+				6D4F112677CCC9019F125775 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dyolo;
+			productName = Dyolo;
+			productReference = 6225C7361A2AF94000C8EDB5 /* Dyolo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6225C74E1A2AF94000C8EDB5 /* DyoloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6225C75C1A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "DyoloTests" */;
+			buildPhases = (
+				6225C74B1A2AF94000C8EDB5 /* Sources */,
+				6225C74C1A2AF94000C8EDB5 /* Frameworks */,
+				6225C74D1A2AF94000C8EDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6225C7511A2AF94000C8EDB5 /* PBXTargetDependency */,
+			);
+			name = DyoloTests;
+			productName = DyoloTests;
+			productReference = 6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6225C72E1A2AF94000C8EDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Joyann;
+				TargetAttributes = {
+					6225C7351A2AF94000C8EDB5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6225C74E1A2AF94000C8EDB5 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 6225C7351A2AF94000C8EDB5;
+					};
+				};
+			};
+			buildConfigurationList = 6225C7311A2AF94000C8EDB5 /* Build configuration list for PBXProject "Dyolo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6225C72D1A2AF94000C8EDB5;
+			productRefGroup = 6225C7371A2AF94000C8EDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6225C7351A2AF94000C8EDB5 /* Dyolo */,
+				6225C74E1A2AF94000C8EDB5 /* DyoloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6225C7341A2AF94000C8EDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */,
+				6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74D1A2AF94000C8EDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D4F112677CCC9019F125775 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF699DFAAA7A099796B8315B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6225C7321A2AF94000C8EDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */,
+				6225C73C1A2AF94000C8EDB5 /* main.m in Sources */,
+				626C3B7D1A2B436C00D1229D /* Movie.m in Sources */,
+				6225C7621A2AF96100C8EDB5 /* DyoloSearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74B1A2AF94000C8EDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C7561A2AF94000C8EDB5 /* DyoloTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6225C7511A2AF94000C8EDB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6225C7351A2AF94000C8EDB5 /* Dyolo */;
+			targetProxy = 6225C7501A2AF94000C8EDB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6225C7571A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6225C7581A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6225C75A1A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA289B1B932237D3869804FF /* Pods-Dyolo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dyolo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6225C75B1A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FAC95B5099CFF34ED010D0 /* Pods-Dyolo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dyolo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6225C75D1A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DyoloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo";
+			};
+			name = Debug;
+		};
+		6225C75E1A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DyoloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6225C7311A2AF94000C8EDB5 /* Build configuration list for PBXProject "Dyolo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C7571A2AF94000C8EDB5 /* Debug */,
+				6225C7581A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6225C7591A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "Dyolo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C75A1A2AF94000C8EDB5 /* Debug */,
+				6225C75B1A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6225C75C1A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "DyoloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C75D1A2AF94000C8EDB5 /* Debug */,
+				6225C75E1A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6225C72E1A2AF94000C8EDB5 /* Project object */;
+}
