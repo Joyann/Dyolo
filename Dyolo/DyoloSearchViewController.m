@@ -7,15 +7,29 @@
 //
 
 #import "DyoloSearchViewController.h"
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
-@interface DyoloSearchViewController () <UITableViewDataSource, UITableViewDelegate>
+static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
+
+@interface DyoloSearchViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong, nonatomic) NSOperationQueue *operationQueue;
+
 @end
 
 @implementation DyoloSearchViewController
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.operationQueue = [[NSOperationQueue alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -69,6 +83,47 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     [self dismissKeyboard];
+}
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    if ([searchBar.text length] > 0) {
+        [self performSearch];
+    }
+}
+
+#pragma mark - PerformSearch
+
+- (void)performSearch
+{
+    [self.searchBar resignFirstResponder];
+    
+    [self.operationQueue cancelAllOperations];
+
+    NSURL *url = [self URLFromSearchText];
+    
+    NSURLRequest *URLRequest = [[NSURLRequest alloc] initWithURL:url];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:URLRequest];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+    }];
+    
+    [self.operationQueue addOperation:operation];
+}
+
+#pragma mark - GetURLFromSearchText
+
+- (NSURL *)URLFromSearchText
+{
+    NSString *text = [self.searchBar.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@tag=%@", DouBanSearchURLString, text]];
+    return url;
 }
 
 @end
