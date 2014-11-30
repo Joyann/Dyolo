@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		6225C73C1A2AF94000C8EDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73B1A2AF94000C8EDB5 /* main.m */; };
 		6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */; };
-		6225C7421A2AF94000C8EDB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7411A2AF94000C8EDB5 /* ViewController.m */; };
-		6225C7451A2AF94000C8EDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7431A2AF94000C8EDB5 /* Main.storyboard */; };
 		6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7461A2AF94000C8EDB5 /* Images.xcassets */; };
-		6225C74A1A2AF94000C8EDB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */; };
 		6225C7561A2AF94000C8EDB5 /* DyoloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7551A2AF94000C8EDB5 /* DyoloTests.m */; };
+		6225C7621A2AF96100C8EDB5 /* DyoloSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */; };
+		6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,13 @@
 		6225C73B1A2AF94000C8EDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6225C7401A2AF94000C8EDB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6225C7411A2AF94000C8EDB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6225C7441A2AF94000C8EDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6225C7461A2AF94000C8EDB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6225C7491A2AF94000C8EDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyoloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6225C7541A2AF94000C8EDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6225C7551A2AF94000C8EDB5 /* DyoloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyoloTests.m; sourceTree = "<group>"; };
+		6225C75F1A2AF96100C8EDB5 /* DyoloSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DyoloSearchViewController.h; sourceTree = "<group>"; };
+		6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DyoloSearchViewController.m; sourceTree = "<group>"; };
+		6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DyoloSearchViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +81,11 @@
 			children = (
 				6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */,
 				6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */,
-				6225C7401A2AF94000C8EDB5 /* ViewController.h */,
-				6225C7411A2AF94000C8EDB5 /* ViewController.m */,
-				6225C7431A2AF94000C8EDB5 /* Main.storyboard */,
 				6225C7461A2AF94000C8EDB5 /* Images.xcassets */,
-				6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */,
 				6225C7391A2AF94000C8EDB5 /* Supporting Files */,
+				6225C75F1A2AF96100C8EDB5 /* DyoloSearchViewController.h */,
+				6225C7601A2AF96100C8EDB5 /* DyoloSearchViewController.m */,
+				6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */,
 			);
 			path = Dyolo;
 			sourceTree = "<group>";
@@ -199,9 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6225C7451A2AF94000C8EDB5 /* Main.storyboard in Resources */,
-				6225C74A1A2AF94000C8EDB5 /* LaunchScreen.xib in Resources */,
 				6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */,
+				6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6225C7421A2AF94000C8EDB5 /* ViewController.m in Sources */,
 				6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */,
 				6225C73C1A2AF94000C8EDB5 /* main.m in Sources */,
+				6225C7621A2AF96100C8EDB5 /* DyoloSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +238,6 @@
 			targetProxy = 6225C7501A2AF94000C8EDB5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6225C7431A2AF94000C8EDB5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6225C7441A2AF94000C8EDB5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6225C7491A2AF94000C8EDB5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6225C7571A2AF94000C8EDB5 /* Debug */ = {

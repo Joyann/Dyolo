@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DyoloSearchViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,16 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    DyoloSearchViewController *dyoloSeachVC = [[DyoloSearchViewController alloc] initWithNibName:@"DyoloSearchViewController" bundle:nil];
+    
+    self.window.rootViewController = dyoloSeachVC;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
