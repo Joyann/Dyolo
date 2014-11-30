@@ -116,7 +116,12 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self parseDictionary:responseObject];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AFHTTPRequestOperation"
+                                                            message:[error localizedDescription]
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil, nil];
+        [alertView show];
     }];
     
     [self.operationQueue addOperation:operation];
@@ -142,6 +147,7 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
         if (movie != nil) {
             [self.movies addObject:movie];
         }
+//        NSLog(@"%@ %@ %@ %@",movie.title, movie.averageRating, movie.directorsName, movie.actorName);
     }
 }
 

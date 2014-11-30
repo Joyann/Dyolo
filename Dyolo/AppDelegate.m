@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DyoloSearchViewController.h"
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 @interface AppDelegate ()
 
@@ -25,6 +26,8 @@
     self.window.rootViewController = dyoloSeachVC;
     
     [self.window makeKeyAndVisible];
+    
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
     
     return YES;
 }
