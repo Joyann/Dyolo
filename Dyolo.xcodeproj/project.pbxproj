@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6225C73C1A2AF94000C8EDB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73B1A2AF94000C8EDB5 /* main.m */; };
+		6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */; };
+		6225C7421A2AF94000C8EDB5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7411A2AF94000C8EDB5 /* ViewController.m */; };
+		6225C7451A2AF94000C8EDB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7431A2AF94000C8EDB5 /* Main.storyboard */; };
+		6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7461A2AF94000C8EDB5 /* Images.xcassets */; };
+		6225C74A1A2AF94000C8EDB5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */; };
+		6225C7561A2AF94000C8EDB5 /* DyoloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6225C7551A2AF94000C8EDB5 /* DyoloTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6225C7501A2AF94000C8EDB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6225C72E1A2AF94000C8EDB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6225C7351A2AF94000C8EDB5;
+			remoteInfo = Dyolo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6225C7361A2AF94000C8EDB5 /* Dyolo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dyolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6225C73A1A2AF94000C8EDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6225C73B1A2AF94000C8EDB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6225C7401A2AF94000C8EDB5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6225C7411A2AF94000C8EDB5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6225C7441A2AF94000C8EDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6225C7461A2AF94000C8EDB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6225C7491A2AF94000C8EDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DyoloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6225C7541A2AF94000C8EDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6225C7551A2AF94000C8EDB5 /* DyoloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyoloTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6225C7331A2AF94000C8EDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74C1A2AF94000C8EDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6225C72D1A2AF94000C8EDB5 = {
+			isa = PBXGroup;
+			children = (
+				6225C7381A2AF94000C8EDB5 /* Dyolo */,
+				6225C7521A2AF94000C8EDB5 /* DyoloTests */,
+				6225C7371A2AF94000C8EDB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6225C7371A2AF94000C8EDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7361A2AF94000C8EDB5 /* Dyolo.app */,
+				6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6225C7381A2AF94000C8EDB5 /* Dyolo */ = {
+			isa = PBXGroup;
+			children = (
+				6225C73D1A2AF94000C8EDB5 /* AppDelegate.h */,
+				6225C73E1A2AF94000C8EDB5 /* AppDelegate.m */,
+				6225C7401A2AF94000C8EDB5 /* ViewController.h */,
+				6225C7411A2AF94000C8EDB5 /* ViewController.m */,
+				6225C7431A2AF94000C8EDB5 /* Main.storyboard */,
+				6225C7461A2AF94000C8EDB5 /* Images.xcassets */,
+				6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */,
+				6225C7391A2AF94000C8EDB5 /* Supporting Files */,
+			);
+			path = Dyolo;
+			sourceTree = "<group>";
+		};
+		6225C7391A2AF94000C8EDB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6225C73A1A2AF94000C8EDB5 /* Info.plist */,
+				6225C73B1A2AF94000C8EDB5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6225C7521A2AF94000C8EDB5 /* DyoloTests */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7551A2AF94000C8EDB5 /* DyoloTests.m */,
+				6225C7531A2AF94000C8EDB5 /* Supporting Files */,
+			);
+			path = DyoloTests;
+			sourceTree = "<group>";
+		};
+		6225C7531A2AF94000C8EDB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6225C7541A2AF94000C8EDB5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6225C7351A2AF94000C8EDB5 /* Dyolo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6225C7591A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "Dyolo" */;
+			buildPhases = (
+				6225C7321A2AF94000C8EDB5 /* Sources */,
+				6225C7331A2AF94000C8EDB5 /* Frameworks */,
+				6225C7341A2AF94000C8EDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dyolo;
+			productName = Dyolo;
+			productReference = 6225C7361A2AF94000C8EDB5 /* Dyolo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6225C74E1A2AF94000C8EDB5 /* DyoloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6225C75C1A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "DyoloTests" */;
+			buildPhases = (
+				6225C74B1A2AF94000C8EDB5 /* Sources */,
+				6225C74C1A2AF94000C8EDB5 /* Frameworks */,
+				6225C74D1A2AF94000C8EDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6225C7511A2AF94000C8EDB5 /* PBXTargetDependency */,
+			);
+			name = DyoloTests;
+			productName = DyoloTests;
+			productReference = 6225C74F1A2AF94000C8EDB5 /* DyoloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6225C72E1A2AF94000C8EDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Joyann;
+				TargetAttributes = {
+					6225C7351A2AF94000C8EDB5 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6225C74E1A2AF94000C8EDB5 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 6225C7351A2AF94000C8EDB5;
+					};
+				};
+			};
+			buildConfigurationList = 6225C7311A2AF94000C8EDB5 /* Build configuration list for PBXProject "Dyolo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6225C72D1A2AF94000C8EDB5;
+			productRefGroup = 6225C7371A2AF94000C8EDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6225C7351A2AF94000C8EDB5 /* Dyolo */,
+				6225C74E1A2AF94000C8EDB5 /* DyoloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6225C7341A2AF94000C8EDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C7451A2AF94000C8EDB5 /* Main.storyboard in Resources */,
+				6225C74A1A2AF94000C8EDB5 /* LaunchScreen.xib in Resources */,
+				6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74D1A2AF94000C8EDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6225C7321A2AF94000C8EDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C7421A2AF94000C8EDB5 /* ViewController.m in Sources */,
+				6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */,
+				6225C73C1A2AF94000C8EDB5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6225C74B1A2AF94000C8EDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6225C7561A2AF94000C8EDB5 /* DyoloTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6225C7511A2AF94000C8EDB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6225C7351A2AF94000C8EDB5 /* Dyolo */;
+			targetProxy = 6225C7501A2AF94000C8EDB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6225C7431A2AF94000C8EDB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6225C7441A2AF94000C8EDB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6225C7481A2AF94000C8EDB5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6225C7491A2AF94000C8EDB5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6225C7571A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6225C7581A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6225C75A1A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dyolo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6225C75B1A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dyolo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6225C75D1A2AF94000C8EDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DyoloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo";
+			};
+			name = Debug;
+		};
+		6225C75E1A2AF94000C8EDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DyoloTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyolo.app/Dyolo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6225C7311A2AF94000C8EDB5 /* Build configuration list for PBXProject "Dyolo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C7571A2AF94000C8EDB5 /* Debug */,
+				6225C7581A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6225C7591A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "Dyolo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C75A1A2AF94000C8EDB5 /* Debug */,
+				6225C75B1A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6225C75C1A2AF94000C8EDB5 /* Build configuration list for PBXNativeTarget "DyoloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6225C75D1A2AF94000C8EDB5 /* Debug */,
+				6225C75E1A2AF94000C8EDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6225C72E1A2AF94000C8EDB5 /* Project object */;
+}
