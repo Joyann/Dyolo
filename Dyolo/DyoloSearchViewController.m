@@ -13,6 +13,8 @@
 
 static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
 static NSString *const MovieCellIdentifier = @"MovieCell";
+static NSString *const MovieLoadingCellIdentifier = @"MovieLoadingCell";
+static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
 
 @interface DyoloSearchViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
@@ -21,6 +23,7 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
 
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
 @property (strong, nonatomic) NSMutableArray *movies;
+@property (assign, nonatomic) BOOL isLoading;
 
 @end
 
@@ -50,6 +53,14 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
     UINib *nib = [UINib nibWithNibName:MovieCellIdentifier bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:MovieCellIdentifier];
     
+    // Register movie loading cell.
+    nib = [UINib nibWithNibName:MovieLoadingCellIdentifier bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:MovieLoadingCellIdentifier];
+    
+    // Register nothing found cell.
+    nib = [UINib nibWithNibName:NothingFoundCellIdentifier bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:NothingFoundCellIdentifier];
+    
 }
 
 
@@ -75,22 +86,37 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (!self.movies) {
+    if (self.isLoading) {
+        return 1;
+    } else if (!self.movies) {
         return 0;
+    } else if ([self.movies count] == 0) {
+        return 1;
     }
-    
     return [self.movies count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    MovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:MovieCellIdentifier
-                                                           forIndexPath:indexPath];
-    Movie *movie = self.movies[indexPath.row];
-    
-    [movieCell configurateCellWithMovie:movie];
-    
-    return movieCell;
+    if (self.isLoading) {
+        UITableViewCell *loadingCell = [tableView dequeueReusableCellWithIdentifier:MovieLoadingCellIdentifier forIndexPath:indexPath];
+        UIActivityIndicatorView *indicator = (UIActivityIndicatorView *)[loadingCell viewWithTag:1001];
+        [indicator startAnimating];
+        
+        return loadingCell;
+    } else if ([self.movies count] == 0) {
+        UITableViewCell *nothingFoundCell = [tableView dequeueReusableCellWithIdentifier:NothingFoundCellIdentifier forIndexPath:indexPath];
+        return nothingFoundCell;
+    } else {
+        MovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:MovieCellIdentifier
+                                                               forIndexPath:indexPath];
+        Movie *movie = self.movies[indexPath.row];
+        
+        [movieCell configurateCellWithMovie:movie];
+        
+        return movieCell;
+    }
+
 }
 
 #pragma mark - UITableViewDelegate
@@ -129,6 +155,12 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
     
     [self.operationQueue cancelAllOperations];
     
+    self.isLoading = YES;
+    
+    if (self.isLoading) {
+        [self.tableView reloadData];
+    }
+    
     self.movies = [[NSMutableArray alloc] init];
 
     NSURL *url = [self URLFromSearchText];
@@ -140,6 +172,7 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self parseDictionary:responseObject];
+        self.isLoading = NO;
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AFHTTPRequestOperation"
@@ -173,7 +206,6 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
         if (movie != nil) {
             [self.movies addObject:movie];
         }
-//        NSLog(@"%@ %@ %@ %@",movie.title, movie.averageRating, movie.directorsName, movie.actorName);
     }
 }
 

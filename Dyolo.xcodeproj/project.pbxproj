@@ -15,6 +15,8 @@
 		6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6225C7611A2AF96100C8EDB5 /* DyoloSearchViewController.xib */; };
 		623BEA011A2C0A30002D935D /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 623BE9FF1A2C0A30002D935D /* MovieCell.m */; };
 		623BEA021A2C0A30002D935D /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623BEA001A2C0A30002D935D /* MovieCell.xib */; };
+		623BEA041A2CA8B4002D935D /* MovieLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623BEA031A2CA8B4002D935D /* MovieLoadingCell.xib */; };
+		623BEA061A2CAC38002D935D /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623BEA051A2CAC38002D935D /* NothingFoundCell.xib */; };
 		626C3B7D1A2B436C00D1229D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 626C3B7C1A2B436C00D1229D /* Movie.m */; };
 		C1B671EF1E6E0A3108D5C8BF /* libPods-Dyolo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */; };
 /* End PBXBuildFile section */
@@ -46,6 +48,8 @@
 		623BE9FE1A2C0A30002D935D /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
 		623BE9FF1A2C0A30002D935D /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		623BEA001A2C0A30002D935D /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		623BEA031A2CA8B4002D935D /* MovieLoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieLoadingCell.xib; sourceTree = "<group>"; };
+		623BEA051A2CAC38002D935D /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		626C3B7B1A2B436C00D1229D /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		626C3B7C1A2B436C00D1229D /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dyolo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 				623BE9FE1A2C0A30002D935D /* MovieCell.h */,
 				623BE9FF1A2C0A30002D935D /* MovieCell.m */,
 				623BEA001A2C0A30002D935D /* MovieCell.xib */,
+				623BEA031A2CA8B4002D935D /* MovieLoadingCell.xib */,
+				623BEA051A2CAC38002D935D /* NothingFoundCell.xib */,
 			);
 			path = Dyolo;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 				623BEA021A2C0A30002D935D /* MovieCell.xib in Resources */,
 				6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */,
 				6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */,
+				623BEA061A2CAC38002D935D /* NothingFoundCell.xib in Resources */,
+				623BEA041A2CA8B4002D935D /* MovieLoadingCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
