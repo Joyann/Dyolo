@@ -8,9 +8,11 @@
 
 #import "DyoloSearchViewController.h"
 #import "Movie.h"
+#import "MovieCell.h"
 #import <AFNetworking/AFHTTPRequestOperation.h>
 
 static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
+static NSString *const MovieCellIdentifier = @"MovieCell";
 
 @interface DyoloSearchViewController () <UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate>
 
@@ -44,6 +46,10 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
     tapGestureRecognizer.cancelsTouchesInView = NO;
     [self.tableView addGestureRecognizer:tapGestureRecognizer];
     
+    // Register movie cell.
+    UINib *nib = [UINib nibWithNibName:MovieCellIdentifier bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:MovieCellIdentifier];
+    
 }
 
 #pragma mark - HideKeyboard
@@ -68,17 +74,30 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    if (!self.movies) {
+        return 0;
+    }
+    
+    return [self.movies count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = nil;
+    MovieCell *movieCell = [tableView dequeueReusableCellWithIdentifier:MovieCellIdentifier
+                                                           forIndexPath:indexPath];
+    Movie *movie = self.movies[indexPath.row];
     
-    return cell;
+    [movieCell configurateCellWithMovie:movie];
+    
+    return movieCell;
 }
 
 #pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80.0;
+}
 
 #pragma mark - UIScrollViewDelegate
 
@@ -115,6 +134,7 @@ static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self parseDictionary:responseObject];
+        [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"AFHTTPRequestOperation"
                                                             message:[error localizedDescription]
