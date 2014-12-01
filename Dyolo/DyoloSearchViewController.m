@@ -52,6 +52,7 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
     
 }
 
+
 #pragma mark - HideKeyboard
 
 - (void)hideKeyboard:(UIGestureRecognizer *)gestureRecognizer
@@ -113,6 +114,11 @@ static NSString *const MovieCellIdentifier = @"MovieCell";
     if ([searchBar.text length] > 0) {
         [self performSearch];
     }
+}
+
+- (UIBarPosition)positionForBar:(id<UIBarPositioning>)bar
+{
+    return UIBarPositionTopAttached;
 }
 
 #pragma mark - PerformSearch
