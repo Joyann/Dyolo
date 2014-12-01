@@ -126,6 +126,20 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
     return 80.0;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (self.isLoading || [self.movies count] == 0) {
+        return nil;
+    } else {
+        return indexPath;
+    }
+}
+
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
