@@ -18,6 +18,8 @@
 		623BEA041A2CA8B4002D935D /* MovieLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623BEA031A2CA8B4002D935D /* MovieLoadingCell.xib */; };
 		623BEA061A2CAC38002D935D /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623BEA051A2CAC38002D935D /* NothingFoundCell.xib */; };
 		626C3B7D1A2B436C00D1229D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 626C3B7C1A2B436C00D1229D /* Movie.m */; };
+		62AFA71C1A2D31DF002FE1BC /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AFA71A1A2D31DF002FE1BC /* MovieDetailViewController.m */; };
+		62AFA71D1A2D31DF002FE1BC /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */; };
 		C1B671EF1E6E0A3108D5C8BF /* libPods-Dyolo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		623BEA051A2CAC38002D935D /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		626C3B7B1A2B436C00D1229D /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		626C3B7C1A2B436C00D1229D /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		62AFA7191A2D31DF002FE1BC /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		62AFA71A1A2D31DF002FE1BC /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dyolo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA289B1B932237D3869804FF /* Pods-Dyolo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dyolo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dyolo/Pods-Dyolo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +117,9 @@
 				623BEA001A2C0A30002D935D /* MovieCell.xib */,
 				623BEA031A2CA8B4002D935D /* MovieLoadingCell.xib */,
 				623BEA051A2CAC38002D935D /* NothingFoundCell.xib */,
+				62AFA7191A2D31DF002FE1BC /* MovieDetailViewController.h */,
+				62AFA71A1A2D31DF002FE1BC /* MovieDetailViewController.m */,
+				62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */,
 			);
 			path = Dyolo;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AFA71D1A2D31DF002FE1BC /* MovieDetailViewController.xib in Resources */,
 				623BEA021A2C0A30002D935D /* MovieCell.xib in Resources */,
 				6225C7471A2AF94000C8EDB5 /* Images.xcassets in Resources */,
 				6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */,
@@ -296,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AFA71C1A2D31DF002FE1BC /* MovieDetailViewController.m in Sources */,
 				6225C73F1A2AF94000C8EDB5 /* AppDelegate.m in Sources */,
 				623BEA011A2C0A30002D935D /* MovieCell.m in Sources */,
 				6225C73C1A2AF94000C8EDB5 /* main.m in Sources */,

@@ -9,6 +9,7 @@
 #import "DyoloSearchViewController.h"
 #import "Movie.h"
 #import "MovieCell.h"
+#import "MovieDetailViewController.h"
 #import <AFNetworking/AFHTTPRequestOperation.h>
 
 static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
@@ -129,6 +130,11 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    MovieDetailViewController *movieDetailVC = [[MovieDetailViewController alloc] initWithNibName:@"MovieDetailViewController" bundle:nil];
+    Movie *movie = self.movies[indexPath.row];
+    movieDetailVC.movie = movie;
+    [movieDetailVC presentInParentViewController:self];
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
