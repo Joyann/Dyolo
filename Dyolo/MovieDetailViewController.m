@@ -9,6 +9,7 @@
 #import "MovieDetailViewController.h"
 #import "DyoloSearchViewController.h"
 #import "Movie.h"
+#import "GradientView.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface MovieDetailViewController ()
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *movieActorsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *movieCollectCountLabel;
 
+@property (strong, nonatomic) GradientView *gradientView;
 
 @end
 
@@ -29,6 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor clearColor];
     
     self.popupView.layer.cornerRadius = 10.0f;
     
@@ -59,12 +63,18 @@
     [self willMoveToParentViewController:nil];
     [self.view removeFromSuperview];
     [self removeFromParentViewController];
+    
+    [self.gradientView removeFromSuperview];
 }
 
 #pragma mark - PresentInParentViewController
 
 - (void)presentInParentViewController:(DyoloSearchViewController *)parentViewController
 {
+    self.gradientView = [[GradientView alloc] initWithFrame:self.view.bounds];
+    [parentViewController.view addSubview:self.gradientView];
+    
+    self.view.bounds = parentViewController.view.bounds;
     [parentViewController.view addSubview:self.view];
     [parentViewController addChildViewController:self];
     [self didMoveToParentViewController:parentViewController];
