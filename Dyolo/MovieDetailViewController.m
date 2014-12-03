@@ -12,7 +12,7 @@
 #import "GradientView.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
-@interface MovieDetailViewController ()
+@interface MovieDetailViewController () <UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *popupView;
 @property (weak, nonatomic) IBOutlet UIImageView *artworkImageView;
@@ -36,7 +36,24 @@
     
     self.popupView.layer.cornerRadius = 10.0f;
     
+    // Add tap gesture.
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClosed)];
+    tapGestureRecognizer.cancelsTouchesInView = NO;
+    tapGestureRecognizer.delegate = self;
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+    
+    // Update UI.
     [self updateUI];
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    if (touch.view == self.view) {
+        return YES;
+    }
+    return NO;
 }
 
 #pragma mark - UpdateUI
@@ -55,16 +72,35 @@
 
 - (IBAction)buttonClosed:(UIButton *)sender
 {
-    [self dismissPopupView];
+    [self dismissPopupViewWithAnimationType:DetailViewControllerAnimationTypeFade];
 }
 
-- (void)dismissPopupView
+- (void)tapClosed
+{
+    [self dismissPopupViewWithAnimationType:DetailViewControllerAnimationTypeSlide];
+}
+
+- (void)dismissPopupViewWithAnimationType:(DetailViewControllerAnimationType)animationType
 {
     [self willMoveToParentViewController:nil];
-    [self.view removeFromSuperview];
-    [self removeFromParentViewController];
     
-    [self.gradientView removeFromSuperview];
+    [UIView animateWithDuration:0.4
+                     animations:^{
+                         if (animationType == DetailViewControllerAnimationTypeSlide) {
+                             self.gradientView.alpha = 0.0f;
+                             CGRect rect = self.view.frame;
+                             rect.origin.y += self.view.bounds.size.height;
+                             self.view.frame = rect;
+                         } else if (animationType == DetailViewControllerAnimationTypeFade) {
+                             self.view.alpha = 0.0f;
+                             self.gradientView.alpha = 0.0f;
+                         }
+                     } completion:^(BOOL finished) {
+                         [self.view removeFromSuperview];
+                         [self removeFromParentViewController];
+                         [self.gradientView removeFromSuperview];
+                     }];
+    
 }
 
 #pragma mark - PresentInParentViewController

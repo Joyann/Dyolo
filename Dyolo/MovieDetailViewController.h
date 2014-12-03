@@ -11,6 +11,11 @@
 @class Movie;
 @class DyoloSearchViewController;
 
+typedef NS_ENUM(NSInteger, DetailViewControllerAnimationType) {
+    DetailViewControllerAnimationTypeFade,
+    DetailViewControllerAnimationTypeSlide
+};
+
 @interface MovieDetailViewController : UIViewController
 
 @property (strong, nonatomic) Movie *movie;
