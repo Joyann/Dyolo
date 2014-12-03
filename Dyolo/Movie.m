@@ -21,7 +21,8 @@
     
     if (self) {
         // Rating.
-        self.averageRating = [movieDic valueForKeyPath:@"rating.average"];
+        double rating = [[movieDic valueForKeyPath:@"rating.average"] doubleValue];
+        self.averageRating = [NSNumber numberWithFloat:[[NSString stringWithFormat:@"%.2f",rating] floatValue]];
         
         // Genres.
         NSArray *genres = movieDic[@"genres"];
@@ -70,6 +71,13 @@
         self.movieURL = movieDic[@"alt"];
     }
     return self;
+}
+
+#pragma mark - SortedByAverageRating
+
+- (NSComparisonResult)sortedByAverageRating:(Movie *)otherMovie
+{
+    return [[otherMovie.averageRating stringValue] localizedStandardCompare:[self.averageRating stringValue]];
 }
 
 @end

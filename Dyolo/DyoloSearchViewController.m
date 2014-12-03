@@ -192,6 +192,7 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self parseDictionary:responseObject];
+        [self.movies sortUsingSelector:@selector(sortedByAverageRating:)];
         self.isLoading = NO;
         [self.tableView reloadData];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

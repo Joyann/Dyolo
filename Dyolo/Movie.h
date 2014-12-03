@@ -26,4 +26,6 @@
 + (instancetype)MovieWithMovieDic:(NSDictionary *)movieDic;
 - (instancetype)initWithMovieDic:(NSDictionary *)movieDic;
 
+- (NSComparisonResult)sortedByAverageRating:(Movie *)otherMovie;
+
 @end
