@@ -29,6 +29,8 @@
     
     CGGradientRef gradientRef = CGGradientCreateWithColorComponents(colorSpaceRef, components, locations, 2);
     
+    CGColorSpaceRelease(colorSpaceRef);
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     CGFloat startCenterX = CGRectGetMidX(self.bounds);
@@ -39,6 +41,8 @@
     CGPoint drawCenter = CGPointMake(startCenterX, startCenterY);
     
     CGContextDrawRadialGradient(context, gradientRef, drawCenter, 0.0f, drawCenter, endRadius, kCGGradientDrawsAfterEndLocation);
+    
+    CGGradientRelease(gradientRef);
 }
 
 @end
