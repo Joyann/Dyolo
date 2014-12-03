@@ -75,9 +75,32 @@
     [parentViewController.view addSubview:self.gradientView];
     
     self.view.bounds = parentViewController.view.bounds;
+    
     [parentViewController.view addSubview:self.view];
     [parentViewController addChildViewController:self];
-    [self didMoveToParentViewController:parentViewController];
+    
+    CAKeyframeAnimation *bounceAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    bounceAnimation.values = @[@0.7, @1.4, @0.4, @1.0];
+    bounceAnimation.keyTimes = @[@0.0, @0.334, @0.667, @1.0];
+    bounceAnimation.duration = 0.4f;
+    bounceAnimation.delegate = self;
+    bounceAnimation.timingFunctions = @[
+       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut],
+       [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    
+    CABasicAnimation *fadeAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnimation.duration = 0.4f;
+    fadeAnimation.fromValue = @0.0f;
+    fadeAnimation.toValue = @1.0f;
+    
+    [self.gradientView.layer addAnimation:fadeAnimation forKey:@"FadeAnimation"];
+    [self.view.layer addAnimation:bounceAnimation forKey:@"BounceAnimation"];
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    [self didMoveToParentViewController:self.parentViewController];
 }
 
 
