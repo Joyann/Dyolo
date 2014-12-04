@@ -139,5 +139,12 @@
     [self didMoveToParentViewController:self.parentViewController];
 }
 
+#pragma mark - Dealloc
+
+- (void)dealloc
+{
+    NSLog(@"Dealloc %@",self);
+}
+
 
 @end

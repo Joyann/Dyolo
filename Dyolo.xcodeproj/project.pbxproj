@@ -20,6 +20,8 @@
 		626C3B7D1A2B436C00D1229D /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 626C3B7C1A2B436C00D1229D /* Movie.m */; };
 		62AFA71C1A2D31DF002FE1BC /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AFA71A1A2D31DF002FE1BC /* MovieDetailViewController.m */; };
 		62AFA71D1A2D31DF002FE1BC /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */; };
+		62CA10951A305A210038A33D /* LandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62CA10931A305A210038A33D /* LandscapeViewController.m */; };
+		62CA10961A305A210038A33D /* LandscapeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CA10941A305A210038A33D /* LandscapeViewController.xib */; };
 		62E7AE6A1A2DB7F700037E49 /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62E7AE691A2DB7F700037E49 /* GradientView.m */; };
 		C1B671EF1E6E0A3108D5C8BF /* libPods-Dyolo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,9 @@
 		62AFA7191A2D31DF002FE1BC /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		62AFA71A1A2D31DF002FE1BC /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+		62CA10921A305A210038A33D /* LandscapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandscapeViewController.h; sourceTree = "<group>"; };
+		62CA10931A305A210038A33D /* LandscapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandscapeViewController.m; sourceTree = "<group>"; };
+		62CA10941A305A210038A33D /* LandscapeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandscapeViewController.xib; sourceTree = "<group>"; };
 		62E7AE681A2DB7F700037E49 /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
 		62E7AE691A2DB7F700037E49 /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
 		6EA5FF19AF4A38927BDB84F0 /* libPods-Dyolo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Dyolo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +130,9 @@
 				62AFA71B1A2D31DF002FE1BC /* MovieDetailViewController.xib */,
 				62E7AE681A2DB7F700037E49 /* GradientView.h */,
 				62E7AE691A2DB7F700037E49 /* GradientView.m */,
+				62CA10921A305A210038A33D /* LandscapeViewController.h */,
+				62CA10931A305A210038A33D /* LandscapeViewController.m */,
+				62CA10941A305A210038A33D /* LandscapeViewController.xib */,
 			);
 			path = Dyolo;
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 				6225C7631A2AF96100C8EDB5 /* DyoloSearchViewController.xib in Resources */,
 				623BEA061A2CAC38002D935D /* NothingFoundCell.xib in Resources */,
 				623BEA041A2CA8B4002D935D /* MovieLoadingCell.xib in Resources */,
+				62CA10961A305A210038A33D /* LandscapeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 				6225C73C1A2AF94000C8EDB5 /* main.m in Sources */,
 				626C3B7D1A2B436C00D1229D /* Movie.m in Sources */,
 				62E7AE6A1A2DB7F700037E49 /* GradientView.m in Sources */,
+				62CA10951A305A210038A33D /* LandscapeViewController.m in Sources */,
 				6225C7621A2AF96100C8EDB5 /* DyoloSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 #import "Movie.h"
 #import "MovieCell.h"
 #import "MovieDetailViewController.h"
+#import "LandscapeViewController.h"
 #import <AFNetworking/AFHTTPRequestOperation.h>
 
 static NSString *const DouBanSearchURLString = @"https://api.douban.com/v2/movie/search?";
@@ -25,6 +26,12 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
 @property (strong, nonatomic) NSMutableArray *movies;
 @property (assign, nonatomic) BOOL isLoading;
+
+@property (strong, nonatomic) LandscapeViewController *landscapeVC;
+
+@property (assign, nonatomic) UIStatusBarStyle statusBarStyle;
+
+@property (strong, nonatomic) MovieDetailViewController *movieDetailVC;
 
 @end
 
@@ -42,6 +49,8 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.statusBarStyle = UIStatusBarStyleDefault;
     
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     
@@ -62,6 +71,18 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
     nib = [UINib nibWithNibName:NothingFoundCellIdentifier bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:NothingFoundCellIdentifier];
     
+}
+
+#pragma mark - StatusBarStyle
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return self.statusBarStyle;
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return NO;
 }
 
 
@@ -133,6 +154,7 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
     
     MovieDetailViewController *movieDetailVC = [[MovieDetailViewController alloc] initWithNibName:@"MovieDetailViewController" bundle:nil];
     Movie *movie = self.movies[indexPath.row];
+    self.movieDetailVC = movieDetailVC;
     movieDetailVC.movie = movie;
     [movieDetailVC presentInParentViewController:self];
 }
@@ -227,6 +249,62 @@ static NSString *const NothingFoundCellIdentifier = @"NothingFoundCell";
         if (movie != nil) {
             [self.movies addObject:movie];
         }
+    }
+}
+
+#pragma mark - RoteteToOrientation
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    
+    if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
+        [self hideLandscapeViewWithDuration:duration];
+    } else {
+        [self showLandscapeViewWithDuration:duration];
+    }
+}
+
+- (void)hideLandscapeViewWithDuration:(NSTimeInterval)duration
+{
+    if (self.landscapeVC != nil) {
+        [self.landscapeVC willMoveToParentViewController:nil];
+        
+        [UIView animateWithDuration:duration
+                         animations:^{
+                             self.landscapeVC.view.alpha = 0.0f;
+                             self.statusBarStyle = UIStatusBarStyleDefault;
+                             [self setNeedsStatusBarAppearanceUpdate];
+                         } completion:^(BOOL finished) {
+                             [self.landscapeVC.view removeFromSuperview];
+                             [self.landscapeVC removeFromParentViewController];
+                             self.landscapeVC = nil;
+                         }];
+        self.movieDetailVC = nil;
+    }
+}
+
+- (void)showLandscapeViewWithDuration:(NSTimeInterval)duration
+{
+    if (self.landscapeVC == nil) {
+        self.landscapeVC = [[LandscapeViewController alloc] initWithNibName:@"LandscapeViewController" bundle:nil];
+        self.landscapeVC.view.frame = self.view.bounds;
+        self.landscapeVC.view.alpha = 0.0f;
+        
+        [self.view addSubview:self.landscapeVC.view];
+        [self addChildViewController:self.landscapeVC];
+        
+        [UIView animateWithDuration:duration
+                         animations:^{
+                             self.landscapeVC.view.alpha = 1.0f;
+                             self.statusBarStyle = UIStatusBarStyleLightContent;
+                             [self setNeedsStatusBarAppearanceUpdate];
+                         } completion:^(BOOL finished) {
+                             [self.landscapeVC didMoveToParentViewController:self];
+                         }];
+        [self.searchBar resignFirstResponder];
+        
+        [self.movieDetailVC dismissPopupViewWithAnimationType:DetailViewControllerAnimationTypeFade];
     }
 }
 

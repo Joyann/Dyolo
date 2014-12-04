@@ -24,8 +24,12 @@
                         <outlet property="delegate" destination="-1" id="3PO-kR-kFo"/>
                     </connections>
                 </tableView>
-                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnl-vX-9CV">
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="vnl-vX-9CV">
                     <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="WrN-0s-K7L"/>
+                        <constraint firstAttribute="width" constant="375" id="noB-V3-34I"/>
+                    </constraints>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="NoA-0X-dID"/>
@@ -33,6 +37,12 @@
                 </searchBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vnl-vX-9CV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="4fP-54-e6W"/>
+                <constraint firstItem="vnl-vX-9CV" firstAttribute="top" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Eq4-NX-KMn"/>
+                <constraint firstItem="vnl-vX-9CV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PUR-UD-PEv"/>
+                <constraint firstItem="vnl-vX-9CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nVG-kM-b7t"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="129.5" y="338.5"/>
         </view>

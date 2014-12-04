@@ -21,5 +21,6 @@ typedef NS_ENUM(NSInteger, DetailViewControllerAnimationType) {
 @property (strong, nonatomic) Movie *movie;
 
 - (void)presentInParentViewController:(DyoloSearchViewController *)parentViewController;
+- (void)dismissPopupViewWithAnimationType:(DetailViewControllerAnimationType)animationType;
 
 @end

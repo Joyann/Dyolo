@@ -21,9 +21,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    DyoloSearchViewController *dyoloSeachVC = [[DyoloSearchViewController alloc] initWithNibName:@"DyoloSearchViewController" bundle:nil];
+    DyoloSearchViewController *searchVC = [[DyoloSearchViewController alloc] initWithNibName:@"DyoloSearchViewController" bundle:nil];
     
-    self.window.rootViewController = dyoloSeachVC;
+    self.window.rootViewController = searchVC;
     
     [self.window makeKeyAndVisible];
     
